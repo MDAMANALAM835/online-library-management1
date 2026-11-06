@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #173b63;
+    color: white;
+    padding: 18px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    background: linear-gradient(120deg, #173b63, #3278a8);
+    color: white;
+    text-align: center;
+    padding: 85px 15px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffd166;
+    color: #173b63;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.books-section,
+.about-section,
+.contact-section {
+    padding: 55px 0;
+    text-align: center;
+}
+
+.books-section h2,
+.about-section h2,
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #173b63;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.categories {
+    margin-bottom: 25px;
+}
+
+.category-btn {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #173b63;
+    color: white;
+    cursor: pointer;
+}
+
+.category-btn:hover {
+    background: #3278a8;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.book-card {
+    background: white;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.book-card h3 {
+    color: #173b63;
+    margin-bottom: 8px;
+}
+
+.book-card p {
+    margin-bottom: 8px;
+}
+
+.book-card button {
+    background: #173b63;
+    color: white;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-card button:hover {
+    background: #3278a8;
+}
+
+.about-section {
+    background: #e8f0f7;
+}
+
+.about-section p {
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background: #173b63;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+}
