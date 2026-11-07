@@ -4,87 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Library Management</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Online Library</h1>
+<header>
+    <div class="container">
+        <h1>Online Library</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#books">Books</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
+<section id="home" class="hero">
+    <div class="container">
+        <h2>Welcome to Our Online Library</h2>
+        <p>Discover, search and explore your favourite books.</p>
+        <a href="#books" class="btn">Explore Books</a>
+    </div>
+</section>
+
+<section id="books" class="books-section">
+    <div class="container">
+        <h2>Our Books Collection</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search books by title or author..."
+        >
+
+        <div class="categories">
+            <button class="category-btn" data-category="All">All</button>
+            <button class="category-btn" data-category="Education">Education</button>
+            <button class="category-btn" data-category="Technology">Technology</button>
+            <button class="category-btn" data-category="Story">Story</button>
         </div>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Welcome to Our Online Library</h2>
-            <p>Discover, search and explore your favourite books.</p>
-            <a href="#books" class="btn">Explore Books</a>
-        </div>
-    </section>
+        <div id="bookList" class="book-list"></div>
+    </div>
+</section>
 
-    <!-- Books Section -->
-    <section id="books" class="books-section">
-        <div class="container">
-            <h2>Our Books Collection</h2>
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Our Library</h2>
+        <p>
+            Our Online Library helps students and readers find
+            useful books easily. Users can explore different
+            categories and read books online.
+        </p>
+    </div>
+</section>
 
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search books by title or author..."
-            >
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: library@example.com</p>
+        <p>Phone: 9876543210</p>
+    </div>
+</section>
 
-            <div class="categories">
-                <button class="category-btn" data-category="All">All</button>
-                <button class="category-btn" data-category="Education">Education</button>
-                <button class="category-btn" data-category="Technology">Technology</button>
-                <button class="category-btn" data-category="Story">Story</button>
-            </div>
+<footer>
+    <p>&copy; 2026 Online Library Management. All Rights Reserved.</p>
+</footer>
 
-            <div id="bookList" class="book-list">
-                <!-- Books will appear here using JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Our Library</h2>
-            <p>
-                Our Online Library helps students and readers find
-                useful books easily. Users can explore different
-                categories and search for books online.
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: library@example.com</p>
-            <p>Phone: 9876543210</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Online Library Management. All Rights Reserved.</p>
-    </footer>
-
-    <script src="config.js"></script>
-    <script src="script.js"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
